@@ -1,0 +1,17 @@
+security:
+    encoders:
+        App\Security\User:
+            algorithm: argon2i
+
+    firewalls:
+        main:
+            anonymous: ~
+            logout: ~
+            stateless: true
+            guard:
+                authenticators:
+                    - App\Security\JwtAuthenticator
+    providers:
+        # used to reload user from session & other features (e.g. switch_user)
+        app_user_provider:
+            id: App\Security\JwtUserProvider
