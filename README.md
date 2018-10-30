@@ -43,3 +43,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3O
  - No behat (no time).  I've Included controller integration tests instead.
  - Doctrine is causing a depreciation error when running unit tests.  Not sure there is a solution for this yet.
  - JWT are not signed, I would do this in a prod env.
+ - Although correct status codes are being sent, full errors are showing for development. 
